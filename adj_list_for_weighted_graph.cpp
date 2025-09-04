@@ -9,6 +9,7 @@ int main() {
     int a,b,c;
     cin >> a >> b >> c;
     adj[a].push_back({b,c});
+    adj[b].push_back({a,c}); // for undirected graph
   }
   
   return 0;
