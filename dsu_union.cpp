@@ -7,7 +7,7 @@ int find(int a) {
     return a;
   }
   int leader = find(parent[a]);
-  parent[a] = leader; // Path compression optimization
+  parent[a] = leader;
   return leader;
 }
 void dsu_union(int a, int b) {
